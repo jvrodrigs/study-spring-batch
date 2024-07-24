@@ -1,0 +1,10 @@
+services:
+  batch-study:
+    image: postgres
+    container_name: batch-db
+    environment:
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "admin@password"
+      POSTGRES_DB: "batch-database"
+    ports:
+      - "5432:5432"
